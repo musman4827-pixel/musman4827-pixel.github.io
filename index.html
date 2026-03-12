@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshFlow | The Science of Better Breathing</title>
+    <title>FreshFlow | Professional Breathing Strips</title>
     <style>
         :root { --primary: #0ea5e9; --secondary: #7dd3fc; --dark: #0f172a; --light: #f0f9ff; }
         body { font-family: 'Inter', -apple-system, sans-serif; margin: 0; color: #334155; scroll-behavior: smooth; line-height: 1.8; }
-        
         header { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); letter-spacing: 1px; }
         nav a { margin-left: 15px; text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.8rem; }
+        .hero { background: linear-gradient(180deg, #e0f7ff 0%, #ffffff 100%); padding: 60px 10%; text-align: center; }
+        .hero h1 { font-size: 2.2rem; color: var(--dark); line-height: 1.2; margin-bottom: 20px; }
+        .advantage { padding: 40px 10%; background: white; }
+        .advantage-box { background: var(--light); padding: 25px; border-radius: 20px; margin-bottom: 20px; border-left: 5px solid var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 10%; }
+        .card { background: white; padding: 20px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center; }
         
-        /* Hero Section */
-        .hero { background: linear-gradient(180deg, #e0f7ff 0%, #ffffff 100%); padding: 80px 10% 40px; text-align: center; }
-        .hero h1 { font-size: 2.5rem; color: var(--dark); line-height: 1.2; margin-bottom: 20px; }
-        .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px; color: #475569; }
+        /* Image fix */
+        .card img { width: 100%; height: auto; border-radius: 15px; margin-bottom: 15px; display: block; }
         
-        /* Deep Dive / Advantage Section */
-        .advantage { padding: 60px 10%; background: white; text-align: left; }
-        .advantage h2 { color: var(--dark); text-align: center; font-size: 2rem; margin-bottom: 40px; }
-        .advantage-box { background: var(--light); padding: 30px; border-radius: 20px; margin-bottom: 30px; border-left: 5px solid var(--primary); }
-        .advantage-box h3 { margin-top: 0; color: var(--primary); }
-
-        /* Product Cards */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px 10%; }
-        .card { background: white; padding: 30px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center; }
-        .price { font-size: 2rem; font-weight: 800; margin: 15px 0; }
-        
-        .buy-btn { background: var(--primary); color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; text-align: center; }
-
-        footer { background: var(--dark); color: white; padding: 40px 10%; font-size: 0.8rem; text-align: center; }
+        .price { font-size: 2rem; font-weight: 800; color: var(--dark); margin: 10px 0; }
+        .buy-btn { background: var(--primary); color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; }
+        footer { background: var(--dark); color: white; padding: 40px 10%; text-align: center; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -39,66 +31,49 @@
         <div class="logo">FRESHFLOW</div>
         <nav>
             <a href="#home">Home</a>
-            <a href="#why">Why Us</a>
             <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero" id="home">
         <h1>Master Your Breath, <br>Transform Your Life.</h1>
-        <p>Most people only use 50% of their breathing capacity. FreshFlow strips are engineered to unlock your full potential by optimizing nasal passage airflow and ensuring restorative mouth-closed sleep.</p>
-        <a href="#shop" class="buy-btn" style="display:inline-block">Get Your Pack Today</a>
+        <p>Unlock 50% more airflow and deeper recovery overnight with FreshFlow medical-grade strips.</p>
     </section>
 
-    <section class="advantage" id="why">
-        <h2>The FreshFlow Advantage</h2>
-        
+    <section class="advantage">
         <div class="advantage-box">
-            <h3>The Nose Strip Effect: Maximum Intake</h3>
-            <p>Our nose strips use <strong>Spring-Flex technology</strong> to gently lift the sides of the nose. This widens the nasal valve—the narrowest part of your airway. 
-            <br><br>
-            <strong>The Result:</strong> You get up to 50% more oxygen per breath. This reduces the effort needed to breathe during sleep (stopping snoring) and keeps your heart rate lower during exercise for better stamina.</p>
+            <h3>Nose Strips: Maximum Intake</h3>
+            <p>Widens nasal passages to increase oxygen flow and stop snoring instantly.</p>
         </div>
-
         <div class="advantage-box">
-            <h3>The Mouth Strip Effect: Deep Recovery</h3>
-            <p>Breathing through your mouth at night dries out your throat and triggers "fight or flight" stress responses. Our mouth strips use a gentle, <strong>cross-shaped tension</strong> to remind your jaw to stay closed.
-            <br><br>
-            <strong>The Result:</strong> You force your body to use its natural filtration system (the nose). This humidifies the air, boosts nitric oxide production, and ensures you stay in deep REM sleep longer without waking up parched or groggy.</p>
+            <h3>Mouth Strips: Deep Recovery</h3>
+            <p>Encourages nasal breathing for better air filtration and deep REM sleep.</p>
         </div>
     </section>
 
-    <section id="shop" style="background: #fafafa;">
-        <h2 style="text-align:center; font-size: 2rem;">Choose Your Solution</h2>
+    <section id="shop" style="background: #fafafa; padding-bottom: 60px;">
+        <h2 style="text-align:center;">Our Products</h2>
         <div class="grid">
             <div class="card">
+                <img src="IMG_1615.jpeg" alt="Mouth Strips">
                 <h3>Nightly Mouth Strips</h3>
-                <img src="mouth.jpg" alt="Mouth Strips" style="width:100%; border-radius:15px; margin-bottom:15px;">
-                <p>30-Day Supply</p>
                 <div class="price">£14.99</div>
-                <p>Perfect for heavy snorers and those who wake up with a dry throat.</p>
-                <a href="#" class="buy-btn">Add to Cart</a>
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
 
             <div class="card">
+                <img src="IMG_1616.jpeg" alt="Nose Strips">
                 <h3>Performance Nose Strips</h3>
-                <img src="nose.jpg" alt="Nose Strips" style="width:100%; border-radius:15px; margin-bottom:15px;">
-                <p>30-Day Supply</p>
                 <div class="price">£14.99</div>
-                <p>Extra-strength lift for athletes and chronic congestion relief.</p>
-                <a href="#" class="buy-btn">Add to Cart</a>
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>UK Support</h2>
-        <p>Questions about shipping or fit? <br><strong>support@freshflowstrips.com</strong></p>
-    </section>
-
-    <footer>
-        <p>© 2026 FreshFlow. Better Breathing. Guaranteed.<br>
-        Shipping daily from the United Kingdom.</p>
+    <footer id="contact">
+        <p>Contact: support@freshflowstrips.com</p>
+        <p>© 2026 FreshFlow UK. Shipping daily.</p>
     </footer>
 
 </body>
